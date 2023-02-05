@@ -1,0 +1,107 @@
+/* Header, navbar et fond de page */
+
+.wraphead {
+  border-radius: 0px;
+  background: #1e1f29;
+  padding: 5px;
+  text-align: center;
+  margin: -8px;
+  border-bottom-left-radius: 80% 40%;
+  border-bottom-right-radius: 80% 40%;
+  border-bottom: 5px solid rgba(255, 255 ,255, 0.5);
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  margin-top: -100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  background-color: white;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+html {
+  background-color: #16161d;
+}
+
+/* Spécifique à la page */
+
+h1 {
+  line-height: 50px;
+  margin-top: 100px;
+  margin-left: 10%;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  line-height: 50px;
+  margin-left: 15%;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
