@@ -8,4 +8,4 @@ Created using HTML5 and TailwindCSS. Some PHP is to expect at some point.
 
 **Want to help ?**
 
-Feel free to help me by creating a fork to edit some part of the code, or to suggest some king of page or information to add !
+Feel free to help me by creating a fork to edit some part of the code, or to suggest some kind of page or information to add !
