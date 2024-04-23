@@ -1,12 +1,19 @@
 <!doctype html>
-<html>
+<style>
+  .custom-background {
+      background-image: url('/images/background.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+</style>
+<html class="custom-background bg-slate-800">
   <title>Az' Homelab Portal</title>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-800">
+<body>
   <div class="flex py-4 my-4 w-1/2 rounded-full justify-center items-center mx-auto shadow-md bg-slate-700">
     <nav class="space-x-12">
       <a href="https://pi.azertox.com/" class="font-bold rounded-full hover:bg-slate-200 hover:text-black p-2 text-white transition">Accueil</a>
@@ -18,6 +25,6 @@
     </div>
     <h1 class="text-6xl text-white text-center mt-20">Bienvenue !</h1>
     <h2 class="text-4xl text-white text-center mt-10 animate-pulse">Ce site est en construction...</h2>
-    <p class="text-slate-500 text-center mt-20">Site hébergé sur mon Raspberry Pi 4B, sous Nginx, via Docker</p>
+    <p class="text-slate-500 text-center mt-20">Site de développement hébergé sur mon Raspberry Pi 4B, sous Nginx, via Docker</p>
 </body>
 </html>
