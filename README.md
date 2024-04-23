@@ -4,7 +4,7 @@ Small personnal website, used to display some informations about me.
 
 **How is it created ?**
 
-Created using HTML5 and TailwindCSS. Some PHP is to expect at some point.
+Created using HTML5 and TailwindCSS. Some PHP may be expected at some point.
 
 **Want to help ?**
 
