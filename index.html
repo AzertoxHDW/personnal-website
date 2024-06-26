@@ -1,24 +1,38 @@
 <!doctype html>
 <style>
   .custom-background {
-      background-image: url('../images/background.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-image: url('./images/background.svg');
   }
   html, body {
-
       margin: 0;
       padding: 0;
       height: 100%;
   }
+  .blinking {
+  animation-name:animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
-<html class="custom-background bg-slate-800">
-  <title>Az' Homelab Portal</title>
+<html class="custom-background bg-cover bg-slate-800">
+  <title>Azertox</title>
   <link rel="icon" href="./images/az_logo.png">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
 <body>
   <div class="flex my-4 justify-center">
@@ -31,8 +45,25 @@
       <a>&nbsp;</a>
     </nav>
   </div>
-  <h1 class="text-6xl text-white text-center mt-20">Bienvenue !</h1>
-  <h2 class="text-4xl text-white text-center mt-10 animate-pulse">Ce site est en construction...</h2>
-  <p class="text-slate-500 text-center mt-20">Site de développement hébergé sur mon Raspberry Pi 4B, sous Nginx, via Docker</p>
+  <h1 class="text-6xl text-white text-center my-20 animate-pulse">Bienvenue sur mon site web !</h1>
+    <div class="flex mt-20 ml-10">
+      <h1 class="text-5xl text-white font-bold">> Qui je suis</h1>
+      <h1 class="text-5xl text-white font-bold blinking">_</h1>
+    </div>
+    <p class="text-3xl text-slate-200 ml-10 p-6 mt-6 rounded-lg w-3/4 bg-gray-500 bg-opacity-25 shadow-2xl">
+      Je suis Dylan (ou Azertox, ou Az', sur internet). Je suis un jeune passionné de technologie qui, 
+      depuis des années déjà, passe son temps à cultiver sa passion au travers de plus en plus de domaines.
+    </p>
+    <div class="flex mt-20 ml-10">
+      <h1 class="text-5xl text-white font-bold">> Ce que je fais</h1>
+      <h1 class="text-5xl text-white font-bold blinking">_</h1>
+    </div>
+    <p class="text-3xl text-slate-200 ml-10 p-6 mt-6 rounded-lg w-3/4 bg-gray-500 bg-opacity-25 shadow-2xl">
+      Je cultive mes connaissances en tant qu'autodidacte dans plusieurs domaines tels que le développement, le "hardware", ou la gestion de serveurs 
+      informatiques, mais aussi dans d'autres domaines plus éloignés de l'informatique comme l'électronique ou la musique.
+    </p>
+    <footer class="fixed bottom-0 bg-gray-800 text-white w-full text-center py-1">
+      Dernière mise à jour du site: 26 juin 2024 &nbsp;|&nbsp; Code source: <a href="https://github.com/AzertoxHDW/personnal-website">Github</a>
+    </footer>
 </body>
 </html>
