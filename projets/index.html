@@ -1,24 +1,39 @@
 <!doctype html>
 <style>
   .custom-background {
-      background-image: url('/images/background.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-image: url('../images/background.svg');
   }
   html, body {
-
       margin: 0;
       padding: 0;
       height: 100%;
   }
+  .blinking {
+  animation-name:animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
-<html class="custom-background bg-slate-800">
-  <title>Mes services</title>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../output.css" rel="stylesheet">
-</head>
+<html class="custom-background bg-cover bg-slate-800">
+  <title>Projets - Azertox</title>
+  <link rel="icon" href="../images/az_logo.png">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+  </head>
 <body>
   <div class="flex my-4 justify-center">
     <nav class="py-4 space-x-12 rounded-full items-center shadow-md bg-slate-700">
@@ -32,5 +47,8 @@
   </div>
     <h1 class="text-6xl text-white text-center mt-20">Mes projets</h1>
     <h2 class="text-4xl text-white text-center mt-10 animate-pulse">Cette page est en construction...</h2>
+    <footer class="fixed bottom-0 bg-gray-800 text-white w-full text-center py-1">
+      Dernière mise à jour du site: 26 juin 2024 &nbsp;|&nbsp; Code source: <a href="https://github.com/AzertoxHDW/personnal-website">Github</a>
+    </footer>
 </body>
 </html>
